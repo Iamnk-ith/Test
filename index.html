@@ -27,10 +27,27 @@
         }
 
         /* Style for developer images */
-        .developer img {
+        /* .developer img {
             max-width: 100%;
             border-radius: 50%;
+        } */
+        /* Style for developer image containers */
+        .image-container {
+            width: 500px; /* Set the desired width */
+            height: 500px; /* Set the desired height */
+            overflow: hidden; /* Crop the image if it overflows */
+            margin: 0 auto; /* Center the image container horizontally */
+            border-radius: 50%;
         }
+
+        /* Style for developer images */
+        .image-container img {
+            max-width: 100%;
+            /* border-radius: 50%; */
+            height: auto;
+            display: block;
+        }
+
 
         /* Style for developer names */
         .developer h1 {
@@ -91,7 +108,9 @@
     </header>
     <div class="container">
         <div class="developer">
-            <img src="developer1.jpg" alt="Developer 1">
+            <div class="image-container">
+                <img src="developer1.jpg" alt="Developer 1">
+            </div>
             <h1>Developer 1</h1>
             <p>Bibash Acharya</p>
             <p>Itahari, Nepal</p>
@@ -99,26 +118,27 @@
             <div class="skills">
                 <h2>Skills:</h2>
                 <ul>
-                    <li>Python<li>
+                    <li>Python</li>
                     <li>Django</li>
                 </ul>
             </div>
-        </div>
+        </div>        
         <div class="developer">
-            <img src="developer2.jpg" alt="Developer 2">
+            <div class="image-container">
+                <img src="developer2.jpg" alt="Developer 2">
+            </div>
             <h1>Developer 2</h1>
             <p>Nitesh Kafle</p>
             <p>Itahari, Nepal</p>
-            <!-- Skills section for Developer 2 -->
+            <!-- Skills section for Developer 1 -->
             <div class="skills">
                 <h2>Skills:</h2>
                 <ul>
                     <li>PHP</li>
                     <li>MySQL</li>
-                    <li>Java</li>
                 </ul>
             </div>
-        </div>
+        </div>    
     </div>
 
     <!-- Footer section -->
