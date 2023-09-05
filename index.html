@@ -109,12 +109,51 @@
         .developer-contact p {
             color: #ccc;
         }
+
+            /* Style for the navigation menu */
+        nav {
+            text-align: center;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px; /* Adjust the spacing between menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline; /* Add an underline effect on hover */
+        }
+        
+        .github_link{
+            color:yellow;
+        }
+
     </style>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <h1 align="center"><b>About Ourselves</b></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#developer1">Bibash Acharya</a></li>
+                <li><a href="#developer2">Nitesh Kafle</a></li>
+                <!-- Add more menu options as needed -->
+            </ul>
+        </nav>
     </header>
     <div class="container">
         <div class="developer" id="first">
@@ -159,11 +198,13 @@
                 <h3>Bibash Acharya</h3>
                 <p>Email: acharyabibash1@gmail.com</p>
                 <p>Phone: +1 (123) 456-7890</p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/acharyabibash" target="_blank" class="github_link">acharyabibash</a></p>
             </div>
             <div class="developer-contact">
                 <h3>Nitesh Kafle</h3>
                 <p>Email: niteshkafle@gmail.com</p>
                 <p>Phone: +1 (987) 654-3210</p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/Iamnk-ith" target="_blank" class="github_link">Nitesh Kafle</a></p>
             </div>
         </div>
     </footer>
